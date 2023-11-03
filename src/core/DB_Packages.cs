@@ -1,10 +1,5 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+
 
 namespace core
 {
@@ -175,7 +170,6 @@ namespace core
         public string DataBase_Id { get; set; }
         public string SearchBar {  get; set; }
         public List<string> Categorys { get; set; }
-        [JsonConstructor]
         public SearchRequest(string c_DataBase_Id, string c_SearchBar, List<string> c_Categorys)
         {
             DataBase_Id = c_DataBase_Id;
@@ -184,13 +178,12 @@ namespace core
         }
 
     }
-
+    
     public class SearchResponse
     {
         public string Item_Name { get; set; }                   // RedBull
         public string HSS_Number { get; set; }                  // HSS 16834682
         public int Quantity { get; set; }                       // 38 Pcs.
-        [JsonConstructor]
         public SearchResponse(string c_item_name, string c_hss_number, int c_quantity)
         {
             Item_Name = c_item_name;
