@@ -170,6 +170,8 @@ namespace core
         public string DataBase_Id { get; set; }
         public string SearchBar {  get; set; }
         public List<string> Categorys { get; set; }
+        public SearchRequest() {} // this
+
         public SearchRequest(string c_DataBase_Id, string c_SearchBar, List<string> c_Categorys)
         {
             DataBase_Id = c_DataBase_Id;
