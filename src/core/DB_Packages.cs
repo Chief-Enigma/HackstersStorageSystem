@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 
 namespace core
@@ -9,7 +10,7 @@ namespace core
     public class Item_package
     {
         [BsonId]
-        public Guid Id { get; set; }                            // 69oMiTMzYE2akqnqLVD8pA==
+        public ObjectId Id { get; set; }                            // 69oMiTMzYE2akqnqLVD8pA==
         public int ItemDataBase_ID { get; set; }                //Database ID
         public string Item_Name { get; set; }                   // RedBull
         public string HSS_Number { get; set; }                  // HSS 16834682
@@ -93,7 +94,7 @@ namespace core
 
     public class DataBaseConfigs
     {
-        public Guid Id { get; set; }
+        public ObjectId Id { get; set; }
         public List<SupplierData> SupplierData { get; set; }
         public List<CategoryData> CategoryData { get; set; }
         public DataBaseConfigs(List<SupplierData> c_SupplierData, List<CategoryData> c_CategoryData) {
@@ -131,7 +132,7 @@ namespace core
 
     public class UserData
     {
-        public Guid Id { get; set; }
+        public ObjectId Id { get; set; }
         public string UserName { get; set; }                    //Username and myabe something with id
         public string User_FirstName { get; set; }              //Firstname 
         public string User_Lastname { get; set; }               //Lastname
