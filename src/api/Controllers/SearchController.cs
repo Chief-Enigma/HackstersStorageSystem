@@ -31,7 +31,11 @@ namespace api.Controllers
         {
             string searchthis = searchRequest.SearchBar;
 
+            List<string> Categorys = new List<string>();
+            Categorys.Add("Moin");
+            Categorys.Add("Neger");
 
+            SearchRequest search = new SearchRequest("hello1", "moinneer", Categorys);
 
             List<SearchResponse> responseList = new List<SearchResponse>();
             //SearchRequest searchRequest1 = new SearchRequest();
