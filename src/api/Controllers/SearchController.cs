@@ -29,32 +29,14 @@ namespace api.Controllers
         [HttpPost]
         public List<SearchResponse> PostSearch([FromBody] SearchRequest searchRequest)
         {
-            //string searchthis = searchRequest.SearchBar;
-
-            //List<string> Categorys = new List<string>();
-            //Categorys.Add("Moin");
-            //Categorys.Add("Neger");
-            //SearchRequest search = new SearchRequest("hello1", "moinneer", Categorys);
-
-            Console.WriteLine(searchRequest.DataBase_Id);
-            Console.WriteLine(searchRequest.SearchBar);
-            Console.WriteLine();
 
             List<SearchResponse> responseList = new List<SearchResponse>();
 
-            SearchResponse response = new SearchResponse(
+            responseList.Add(new SearchResponse(
                 "RedBull Apple",
                 "HSS123456789",
                 22
-                );
-
-            responseList.Add(response);
-            responseList.Add(response);
-            responseList.Add(response);
-            responseList.Add(response);
-            responseList.Add(response);
-
-
+                ));
 
             return responseList;
         }
