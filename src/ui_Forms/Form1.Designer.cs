@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ListViewItem listViewItem1 = new ListViewItem(new string[] { "Heissnes", "100", "Hoties" }, -1);
+            ListViewItem listViewItem2 = new ListViewItem(new string[] { "Heissnes", "100", "Hoties" }, -1);
             lbSearchResults = new ListBox();
             txtSearch = new TextBox();
             btnSearch = new Button();
@@ -144,7 +144,7 @@
             // 
             btnSaveItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSaveItem.ForeColor = SystemColors.ActiveCaptionText;
-            btnSaveItem.Location = new Point(773, 329);
+            btnSaveItem.Location = new Point(773, 322);
             btnSaveItem.Name = "btnSaveItem";
             btnSaveItem.Size = new Size(122, 25);
             btnSaveItem.TabIndex = 3;
@@ -155,7 +155,7 @@
             // 
             btnAddItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnAddItem.ForeColor = SystemColors.ActiveCaptionText;
-            btnAddItem.Location = new Point(646, 360);
+            btnAddItem.Location = new Point(646, 353);
             btnAddItem.Name = "btnAddItem";
             btnAddItem.Size = new Size(122, 24);
             btnAddItem.TabIndex = 4;
@@ -166,7 +166,7 @@
             // 
             btnDeleteItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeleteItem.ForeColor = SystemColors.ActiveCaptionText;
-            btnDeleteItem.Location = new Point(774, 359);
+            btnDeleteItem.Location = new Point(774, 352);
             btnDeleteItem.Name = "btnDeleteItem";
             btnDeleteItem.Size = new Size(123, 25);
             btnDeleteItem.TabIndex = 5;
@@ -210,7 +210,7 @@
             gbStoragePlace.Controls.Add(label10);
             gbStoragePlace.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             gbStoragePlace.ForeColor = SystemColors.ButtonHighlight;
-            gbStoragePlace.Location = new Point(646, 157);
+            gbStoragePlace.Location = new Point(646, 150);
             gbStoragePlace.Name = "gbStoragePlace";
             gbStoragePlace.Size = new Size(249, 135);
             gbStoragePlace.TabIndex = 30;
@@ -311,7 +311,7 @@
             LvSpecs.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             LvSpecs.FullRowSelect = true;
             LvSpecs.GridLines = true;
-            LvSpecs.Items.AddRange(new ListViewItem[] { listViewItem1 });
+            LvSpecs.Items.AddRange(new ListViewItem[] { listViewItem2 });
             LvSpecs.Location = new Point(6, 51);
             LvSpecs.Name = "LvSpecs";
             LvSpecs.Size = new Size(381, 234);
@@ -374,7 +374,7 @@
             // 
             btnEditItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnEditItem.ForeColor = SystemColors.ActiveCaptionText;
-            btnEditItem.Location = new Point(646, 329);
+            btnEditItem.Location = new Point(646, 322);
             btnEditItem.Name = "btnEditItem";
             btnEditItem.Size = new Size(122, 25);
             btnEditItem.TabIndex = 10;
@@ -428,7 +428,7 @@
             // 
             btnBookOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBookOut.ForeColor = SystemColors.ActiveCaptionText;
-            btnBookOut.Location = new Point(773, 298);
+            btnBookOut.Location = new Point(773, 291);
             btnBookOut.Name = "btnBookOut";
             btnBookOut.Size = new Size(122, 25);
             btnBookOut.TabIndex = 9;
@@ -570,7 +570,7 @@
             // 
             btnBookIn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBookIn.ForeColor = SystemColors.ActiveCaptionText;
-            btnBookIn.Location = new Point(646, 298);
+            btnBookIn.Location = new Point(646, 291);
             btnBookIn.Name = "btnBookIn";
             btnBookIn.Size = new Size(122, 25);
             btnBookIn.TabIndex = 8;
@@ -587,7 +587,7 @@
             gbSupplier.Controls.Add(label5);
             gbSupplier.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             gbSupplier.ForeColor = SystemColors.ButtonHighlight;
-            gbSupplier.Location = new Point(646, 41);
+            gbSupplier.Location = new Point(646, 34);
             gbSupplier.Name = "gbSupplier";
             gbSupplier.Size = new Size(249, 110);
             gbSupplier.TabIndex = 24;

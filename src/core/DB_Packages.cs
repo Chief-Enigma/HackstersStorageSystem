@@ -153,14 +153,14 @@ namespace core
 
     public class UserDBAccess
     {
-        public int UserDataBase_ID { get; set; }                //DataBase ID for searching
-        public string UserDataBase_Name { get; set; }           //DataBase Name for display
-        public string UserDataBase_Role { get; set; }           //Users Role from DataBase Owner, Admin, etc
+        public int User_DataBaseID { get; set; }                //DataBase ID for searching
+        public string User_DataBaseName { get; set; }           //DataBase Name for display
+        public string User_DataBaseRole { get; set; }           //Users Role from DataBase Owner, Admin, etc
         public UserDBAccess(int c_UserDataBase_ID, string c_UserDataBase_Name, string c_UserDataBase_Role)
         {
-            UserDataBase_ID = c_UserDataBase_ID;
-            UserDataBase_Name = c_UserDataBase_Name;
-            UserDataBase_Role = c_UserDataBase_Role;
+            User_DataBaseID = c_UserDataBase_ID;
+            User_DataBaseName = c_UserDataBase_Name;
+            User_DataBaseRole = c_UserDataBase_Role;
         }
     }
 
